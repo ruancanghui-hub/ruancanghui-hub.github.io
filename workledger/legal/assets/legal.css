@@ -1,0 +1,143 @@
+/* Work Happy / 打工小账本 · GitHub Pages legal */
+:root {
+  --ink: #1a1a1a;
+  --body: #2c2c2c;
+  --muted: #666;
+  --canvas: #faf8f4;
+  --card: #ffffff;
+  --accent: #b8860b;
+  --line: #e6e0d4;
+  --max: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(180deg, #f3eee4 0%, var(--canvas) 30%, #fff 100%);
+  color: var(--body);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover { color: #8a6508; }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 3.5rem;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  padding: 1rem 0 1.25rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.75rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand strong {
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.brand span {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  font-size: 0.95rem;
+}
+
+.nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.55rem;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin: 1.6rem 0 0.6rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--ink);
+  margin: 1.1rem 0 0.4rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+ul { padding-left: 1.2rem; }
+li { margin: 0.35rem 0; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  margin: 1rem 0;
+}
+
+.note {
+  background: #fff8e8;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.links { list-style: none; padding: 0; margin: 0; }
+.links li { margin: 0 0 1rem; }
+.links p { margin: 0.25rem 0 0; color: var(--muted); font-size: 0.92rem; }
+
+.site-footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+code {
+  font-size: 0.9em;
+  background: #f0ebe3;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
